@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'application'
+}
+
+group 'at.xirado'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('org.jetbrains:annotations:22.0.0')
+    implementation('org.apache.commons:commons-collections4:4.4')
+    implementation('com.fasterxml.jackson.core:jackson-databind:2.13.0')
+    implementation("net.sf.trove4j:trove4j:3.0.3")
+    implementation("org.slf4j:slf4j-api:1.7.25")
+    implementation group: 'javax.annotation', name: 'javax.annotation-api', version: '1.3.2'
+
+
+}
+
+compileJava.options.encoding = 'UTF-8'
